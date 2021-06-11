@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class Task {
+    public static void main(String[] args) {
+        task1();
+    }
+    //Написати програму, яка в залежності від порядкового номера кольору у спектрі (1,2,...7)
+    //виводить його назву (червоний, помаранчевий, жовтий, зелений, блакитний, синій, фіолетовий)
+
+    public static void task1(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введіть число :");
+        int number = scanner.nextInt();
+        switch (number) {
+            case 1 -> System.out.println("Червоний");
+            case 2 -> System.out.println("Помаранчевий");
+            case 3 -> System.out.println("Жовтий");
+            case 4 -> System.out.println("Зелений");
+            case 5 -> System.out.println("Голубий");
+            case 6 -> System.out.println("Синій");
+            case 7 -> System.out.println("Фіолетовий");
+            default -> System.out.println("Ви ввели невірне число!");
+        }
+    }
+}
